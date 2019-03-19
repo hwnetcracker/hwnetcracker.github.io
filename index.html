@@ -1,1 +1,75 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение квадратного уравнения</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="App.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row justify-content-around align-items-start">
+        <div class="col-md-6 ">
+            <form>
+                <div class="row">
+                    <div class="col col-sm-2">
+                        <input type="text" class="a form-control" placeholder="a">
+
+                    </div>
+                    <label class="col-sm-2 col-form-label">\(*x^2\) +</label>
+                    <div class="col">
+                        <input type="text" class="b form-control" placeholder="b">
+
+                    </div>
+                    <label class="col-sm-1 col-form-label">\(*x +\) </label>
+                    <div class="col">
+                        <input type="text" class="c form-control" placeholder="c">
+
+                    </div>
+                    <label class="col-sm-1 col-form-label">\(= 0\) </label>
+                    <label  class="btn btn-dark mb-2">Решить</label>
+                </div>
+            </form>
+            <div id="answer" class="row alert alert-secondary"></div>
+            <div id="warning" class="row alert alert-danger">Введенные данные не корректные</div>
+
+
+        </div>
+
+        <div class="col-md-4  ">
+           <div class="row">
+            <h3>История</h3>
+
+            <table class="table table-striped ">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">a</th>
+                    <th scope="col">b</th>
+                    <th scope="col">c</th>
+                    <th scope="col">\(X_1\)</th>
+                    <th scope="col">\(X_2\)</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+           </div>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
